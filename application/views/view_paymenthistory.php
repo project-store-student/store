@@ -8,15 +8,22 @@
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 hidden-xs" >
 
         </div>
-        <div class="col-lg-10 col-md-10  col-sm-10 col-xs-12" style="">
+        <div class="col-lg-10 col-md-10  col-sm-12 col-xs-12" style="">
             <div class="col-lg-6 col-md-6  col-sm-6 col-xs-6" style="">
                 <h4 style="margin:10px 0px 10px 0px;"><i class="icon-newspaper-1"></i>ใบเสร็จ</h4>
             </div>
             <div class="col-lg-6 col-md-6  col-sm-6 col-xs-6" style="">
                 <form action="" class="search-form">
-                    <div class="form-group has-feedback">
+                    <div class="form-group has-feedback search-1">
                         <label for="search" class="sr-only">Search</label>
-                        <input type="text" class="form-control" name="search" id="search" placeholder="Search ID Receipt">
+                        <input type="text" class="form-control" name="search-1" id="search-1" placeholder="Search ID Receipt">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+                <form action="" class="search-form" >
+                    <div class="form-group has-feedback search-2" style="display:none;">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" name="search-2" id="search-2" placeholder="Search ID Receipt">
                         <span class="glyphicon glyphicon-search form-control-feedback"></span>
                     </div>
                 </form>
@@ -28,13 +35,13 @@
 
 
         <div class="row" style="margin-top: 10px;">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" >
-                <h5 style=" "><a onClick="$('#step-2').hide(); $('#step-1').show();" ><i class="icon-menu"></i> รายการที่สั่ง</a></h5>
-                <h5 style=""><a onClick="$('#step-1').hide(); $('#step-2').show();" ><i class="icon-history"></i> ประวัติการทำรายการ</a></h5>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 a-class" >
+                <h5 style=" "><a onClick="$('#step-2').hide(); $('.search-2').hide(); $('.search-1').show(); $('#step-1').show();" ><i class="icon-menu"></i> รายการที่สั่ง</a></h5>
+                <h5 style=""><a onClick="$('#step-1').hide(); $('.search-1').hide(); $('.search-2').show();$('#step-2').show();" ><i class="icon-history"></i> ประวัติการทำรายการ</a></h5>
             </div>
             <div id="step-1">
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="">
-                    <div id="accordion" role="tablist" aria-multiselectable="true" >
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="">
+                    <div id="accordion1" role="tablist" aria-multiselectable="true" >
                         <div class="panel panel-default">
                             <?php
                             $a = 0;
@@ -44,24 +51,26 @@
                                     <h4 class = "panel-title">
                                         <div data-toggle = "collapse" data-parent = "#accordion" href = "#collapse<?php echo $a; ?>" aria-expanded = "false" aria-controls = "collapse<?php echo $a; ?>">
                                             <strong>รหัสการสั่งซื้อ : <small><?php echo $key->txn_id; ?></small></strong>
-                                            <small class="hidden-xs"><?php echo date("d M Y H:i", strtotime($key->payment_date)); ?> น.</small>
+                                            <small  class="date-small hidden-xs"><?php echo date("d M Y H:i", strtotime($key->payment_date)); ?> น.</small>
+
                                             <?php if ($key->payment_status == "1") { ?>
-                                                <strong style="margin:0px 20px 0px 0px; float: right; top: -9px; color: red;" ><i class="icon-"> </i> Pending </strong>
-                                                <a href="" ></a><button style="margin:0px 30px 0px 0px; float: right; top: -9px;" onClick="window.location.href = '<?php echo base_url("my_customer/payment_confirm?txt_id=$key->txn_id"); ?>';" style="margin: 15px " class="btn bg-gray hvr-shutter-out-horizontal" type="button"><i class="icon-ok-circled"> </i> ยืนยันการชำระ </button>
+                                                <strong class="hidden-xs" style="margin:0px 20px 0px 0px; float: right; top: -9px; color: red;" ><i class="icon-"> </i> Pending </strong>
+                                                <button  style="margin:0px 30px 0px 0px; float: right; top: -9px;" onClick="window.location.href = '<?php echo base_url("my_customer/payment_confirm?txt_id=$key->txn_id"); ?>';" style="margin: 15px " class="btn bg-gray hvr-shutter-out-horizontal hidden-xs" type="button"><i class="icon-ok-circled"> </i> ยืนยันการชำระ </button>
                                             <?php } else if ($key->payment_status == "2") { ?>
-                                                <strong style="margin:0px 20px 0px 0px; float: right; top: -9px; color: #f36f21;" ><i class="icon-"> </i> Verify </strong>
+                                                <strong class="hidden-xs" style="margin:0px 20px 0px 0px; float: right; top: -9px; color: #f36f21;" ><i class="icon-"> </i> Verify </strong>
                                             <?php } else if ($key->payment_status == "0") { ?>
-                                                <strong style="margin:0px 20px 0px 0px; float: right; top: -9px; color: #04bd00;" ><i class="icon-"> </i> Complete </strong>
+                                                <strong class="hidden-xs" style="margin:0px 20px 0px 0px; float: right; top: -9px; color: #04bd00;" ><i class="icon-"> </i> Complete </strong>
                                             <?php } else { ?>
-                                                <strong style="margin:0px 20px 0px 0px; float: right; top: -9px; color: red;" ><i class="icon-"> </i> Failed (ติดต่อผู้ดูแลระบบ) </strong>
+                                                <strong class="hidden-xs" style="margin:0px 20px 0px 0px; float: right; top: -9px; color: red;" ><i class="icon-"> </i> Failed (ติดต่อผู้ดูแลระบบ) </strong>
                                             <?php } ?>
+
                                         </div>
                                     </h4>
                                 </div>
                                 <div id = "collapse<?php echo $a; ?>" class = "panel-collapse collapse" role = "tabpanel" aria-labelledby = "heading<?php echo $a; ?>">
                                     <ol>
                                         <?php
-                                        foreach ($paymet_detail[$a] as $key => $value) {
+                                        foreach ($paymet_detail[$a] as $rs => $value) {
                                             $total = $value->payment_gross;
                                             ?>
                                             <li><h6><?php echo $value->sm_autoid; ?> - <?php echo $value->sm_productname; ?> - ราคา <strong style=""><?php echo $value->ss_price; ?></strong> บาท </h6></li>
@@ -70,6 +79,34 @@
                                     <ul class="list-group">
                                         <li class="list-group-item" style="padding: 25px 20px 25px 20px;"><h6 style="margin: 0px; padding: 0px;"><strong style="float:right; margin-right: 20px; padding: 0px;">ราคา <?php echo $total; ?> บาท</strong></h6></li>
                                     </ul>
+                                    <?php if ($key->payment_status == "1") { ?>
+                                        <ul class="list-group visible-xs">
+                                            <li class="list-group-item ">
+                                                <strong style="color: red;" ><i class="icon-"> </i> Pending </strong>
+                                                <button style="margin:0px 30px 0px 0px; float: right; top: -7px;" onClick="window.location.href = '<?php echo base_url("my_customer/payment_confirm?txt_id=$key->txn_id"); ?>';" style="margin: 15px " class="btn bg-gray hvr-shutter-out-horizontal " type="button"><i class="icon-ok-circled"> </i> ยืนยันการชำระ </button>
+                                            </li>
+                                        </ul>
+                                    <?php } else if ($key->payment_status == "2") { ?>
+                                        <ul class="list-group visible-xs">
+                                            <li class="list-group-item">
+                                                <strong style="color: #f36f21;" ><i class="icon-"> </i> Verify </strong>
+                                            </li>
+                                        </ul>
+                                    <?php } else if ($key->payment_status == "0") { ?>
+                                        <ul class="list-group visible-xs">
+                                            <li class="list-group-item">
+                                                <strong style="color: #04bd00;" ><i class="icon-"> </i> Complete </strong>
+                                            </li>
+                                        </ul>
+
+                                    <?php } else { ?>
+                                        <ul class="list-group visible-xs">
+                                            <li class="list-group-item">
+                                                <strong style="color: red;" ><i class="icon-"> </i> Failed (ติดต่อผู้ดูแลระบบ) </strong>
+                                            </li>
+                                        </ul>
+                                    <?php } ?>
+
                                 </div>
                                 <?php
                                 $a++;
@@ -126,8 +163,8 @@
 <?php $this->load->view('view_footerproduct'); ?>
 <script>
     $(document).ready(function () {
-        $("#search").on("input", function () {
-            var search = $("#search").val().trim();
+        $("#search-1").on("input", function () {
+            var search = $("#search-1").val().trim();
             if (search != "") {
                 $(".search-form .form-group").addClass("hover");
 
@@ -138,13 +175,43 @@
                 url: "<?php echo base_url('my_customer/selectlike_payment_history'); ?>",
                 method: "POST",
                 datatype: "html",
-                data: "search=" + search,
+                data: "search=" + search + "&type=1",
                 success: function (redata) {
-                    //                     alert(redata);
+//                     alert(redata);
+                    $("#accordion1").empty().html(redata);
+                }
+            });
+
+
+
+        });
+        $("#search-2").on("input", function () {
+            var search = $("#search-2").val().trim();
+            if (search != "") {
+                $(".search-form .form-group").addClass("hover");
+            } else {
+                $(".search-form .form-group").removeClass("hover");
+            }
+            $.ajax({
+                url: "<?php echo base_url('my_customer/selectlike_payment_history'); ?>",
+                method: "POST",
+                datatype: "html",
+                data: "search=" + search + "&type=2",
+                success: function (redata) {
+//                    alert(redata);
                     $("#accordion2").empty().html(redata);
                 }
             });
 
+        });
+        $(window).on("load resize scroll", function (e) {
+            width = $(this).width();
+            console.log(width);
+            if (width <= 788) {
+                $('.date-small').addClass("hidden-sm");
+            } else {
+                $('.date-small').removeClass("hidden-sm");
+            }
         });
     });
 </script>
@@ -198,6 +265,13 @@
         color: #3596e0;
         left: initial;
         font-size: 14px;
+    }
+    .a-class > h5 > a{
+        color:#777;
+    }
+    .a-class > h5 > a:hover{
+        text-decoration: none;
+        color:#333;
     }
 
 </style>
