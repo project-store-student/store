@@ -1,0 +1,24 @@
+.one-produce{
+    width:945px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+}
+.photo{
+    margin: 5px 0px;
+      position: absolute;
+}
+.detail{
+              margin: 5px 250px;
+    width: 340px;
+
+
+}
+
+
+
+.one-product-button:hover{
+    background:#fff;
+}
+#cancel:hover{
+    background:#fff;
+}
