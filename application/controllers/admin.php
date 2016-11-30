@@ -68,31 +68,31 @@ class Admin extends CI_Controller {
         $this->load->view('index', $data);
     }
 
-    // public function calendar() {
-    //     $this->check();
-    //     $m_y = $this->input->post("m_y");
-    //     $sp_m_y = explode('-', $m_y);
-    //     $m = $sp_m_y[1];
-    //     $Y = $sp_m_y[0];
-    //     $calendar['mtr'] = $this->materials_model->select_mat_to_calendar($m, $Y);
-    //     $calendar['rp'] = $this->materials_model->select_rp_to_calendar($m, $Y);
-    //     $date = time();
-    //     $calendar['day'] = date('d', $date);
-    //     $calendar['month'] = $sp_m_y[1];
-    //     $calendar['year'] = $sp_m_y[0];
-    //     $mkdate = mktime(0, 0, 0, $calendar['month'], 1, $calendar['year']);
-    //     $calendar['full_month'] = date('F', $mkdate);
-    //     $calendar['weekday'] = date('w', $mkdate);
-    //     $calendar['last_days'] = date('t', $mkdate);
-    //     $calendar['Dday'] = date('D', $mkdate);
-    //     $calendar['arrDday'] = $arrDday = array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
-    //     $calendar['day'] = 1;
-    //     $calendar['nextMonth'] = date('Y-n', mktime(0, 0, 0, ($sp_m_y[1] + 1), 1, $sp_m_y[0]));
-    //     $calendar['prevMonth'] = date('Y-n', mktime(0, 0, 0, ($sp_m_y[1] - 1), 1, $sp_m_y[0]));
+    public function calendar() {
+        $this->check();
+        $m_y = $this->input->post("m_y");
+        $sp_m_y = explode('-', $m_y);
+        $m = $sp_m_y[1];
+        $Y = $sp_m_y[0];
+        $calendar['mtr'] = $this->materials_model->select_mat_to_calendar($m, $Y);
+        $calendar['rp'] = $this->materials_model->select_rp_to_calendar($m, $Y);
+        $date = time();
+        $calendar['day'] = date('d', $date);
+        $calendar['month'] = $sp_m_y[1];
+        $calendar['year'] = $sp_m_y[0];
+        $mkdate = mktime(0, 0, 0, $calendar['month'], 1, $calendar['year']);
+        $calendar['full_month'] = date('F', $mkdate);
+        $calendar['weekday'] = date('w', $mkdate);
+        $calendar['last_days'] = date('t', $mkdate);
+        $calendar['Dday'] = date('D', $mkdate);
+        $calendar['arrDday'] = $arrDday = array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+        $calendar['day'] = 1;
+        $calendar['nextMonth'] = date('Y-n', mktime(0, 0, 0, ($sp_m_y[1] + 1), 1, $sp_m_y[0]));
+        $calendar['prevMonth'] = date('Y-n', mktime(0, 0, 0, ($sp_m_y[1] - 1), 1, $sp_m_y[0]));
 
-    //     $view = $this->load->view('calendar-en', $calendar, true);
-    //     echo json_encode($view, true);
-    // }
+        $view = $this->load->view('calendar-en', $calendar, true);
+        echo json_encode($view, true);
+    }
 
     public function login() {
         $login['emp_username'] = $this->input->post("username");
