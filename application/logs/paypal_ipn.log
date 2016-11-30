@@ -1,0 +1,108 @@
+[11/14/2016 9:49 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/14/2016 9:51 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=412.00, protection_eligibility=Eligible, address_status=confirmed, item_number1=8111525, item_number2=8115968, payer_id=S64ML4G352ER8, tax=0.00, address_street=1 Main St, payment_date=18:51:13 Nov 13, 2016 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=test, mc_fee=22.95, address_country_code=US, address_name=test buyer, notify_version=3.8, custom=Kamontat, payer_status=verified, business=apisit.junpim-facilitator@gmail.com, address_country=United States, num_cart_items=2, mc_handling1=0.00, mc_handling2=0.00, address_city=San Jose, payer_email=apisit.junpim-buyer@gmail.com, verify_sign=An5ns1Kso7MWUdW4ErQKJJJ4qi4-ASDiHM2oJRBoCYP4QgjNkeMIJ6c9, mc_shipping1=0.00, mc_shipping2=0.00, tax1=0.00, tax2=0.00, txn_id=31T7701857733840U, payment_type=instant, last_name=buyer, item_name1=แผ่นพื้นสำเร็จรูปสามขา, address_state=CA, receiver_email=apisit.junpim-facilitator@gmail.com, item_name2=ปูนซีเมนต์ถุงเอสซีจี  ถุง 50 กก. รับกำลังอัดเร็, payment_fee=, quantity1=1, quantity2=1, receiver_id=F27DKKEPRMGY2, txn_type=cart, mc_gross_1=300.00, mc_currency=THB, mc_gross_2=112.00, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=, merchant_return_link=click here, auth=ALi-1C.nmi9dWEyXS3DYNltMP6sPdmaHCm3P-wjJ1DDqDhqBN2-O3BLN6uVhGCi4jr0EALW6D7V4XQvEnycUUIA, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/14/2016 9:57 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=412.00, protection_eligibility=Eligible, address_status=confirmed, item_number1=8111525, item_number2=8115968, payer_id=S64ML4G352ER8, tax=0.00, address_street=1 Main St, payment_date=18:57:11 Nov 13, 2016 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=test, mc_fee=22.95, address_country_code=US, address_name=test buyer, notify_version=3.8, custom=apisit, payer_status=verified, business=apisit.junpim-facilitator@gmail.com, address_country=United States, num_cart_items=2, mc_handling1=0.00, mc_handling2=0.00, address_city=San Jose, payer_email=apisit.junpim-buyer@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AEPHS6ycskEwh-ISv-YKWlsIA1jN, mc_shipping1=0.00, mc_shipping2=0.00, tax1=0.00, tax2=0.00, txn_id=1DV535817Y947145A, payment_type=instant, last_name=buyer, item_name1=แผ่นพื้นสำเร็จรูปสามขา, address_state=CA, receiver_email=apisit.junpim-facilitator@gmail.com, item_name2=ปูนซีเมนต์ถุงเอสซีจี  ถุง 50 กก. รับกำลังอัดเร็, payment_fee=, quantity1=1, quantity2=1, receiver_id=F27DKKEPRMGY2, txn_type=cart, mc_gross_1=300.00, mc_currency=THB, mc_gross_2=112.00, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=, merchant_return_link=click here, auth=ALYxn2WtzcCLJ5NZ4-7GKvFDjbbmYq4NUlSLL94FLe7HBi5TjhA-c8WexvsrLArnCjf-ce-2J5wRtuNtuMAQKIA, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/14/2016 9:57 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=412.00, protection_eligibility=Eligible, address_status=confirmed, item_number1=8111525, item_number2=8115968, payer_id=S64ML4G352ER8, tax=0.00, address_street=1 Main St, payment_date=18:57:11 Nov 13, 2016 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=test, mc_fee=22.95, address_country_code=US, address_name=test buyer, notify_version=3.8, custom=apisit, payer_status=verified, business=apisit.junpim-facilitator@gmail.com, address_country=United States, num_cart_items=2, mc_handling1=0.00, mc_handling2=0.00, address_city=San Jose, payer_email=apisit.junpim-buyer@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AEPHS6ycskEwh-ISv-YKWlsIA1jN, mc_shipping1=0.00, mc_shipping2=0.00, tax1=0.00, tax2=0.00, txn_id=1DV535817Y947145A, payment_type=instant, last_name=buyer, item_name1=แผ่นพื้นสำเร็จรูปสามขา, address_state=CA, receiver_email=apisit.junpim-facilitator@gmail.com, item_name2=ปูนซีเมนต์ถุงเอสซีจี  ถุง 50 กก. รับกำลังอัดเร็, payment_fee=, quantity1=1, quantity2=1, receiver_id=F27DKKEPRMGY2, txn_type=cart, mc_gross_1=300.00, mc_currency=THB, mc_gross_2=112.00, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=, auth=ALYxn2WtzcCLJ5NZ4-7GKvFDjbbmYq4NUlSLL94FLe7HBi5TjhA-c8WexvsrLArnCjf-ce-2J5wRtuNtuMAQKIA, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/14/2016 12:38 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+first_name=test, mc_shipping=0.00, payer_status=verified, mc_currency=THB, payment_fee=, address_status=confirmed, payment_gross=, address_zip=95131, mc_handling=0.00, address_country_code=US, txn_type=cart, num_cart_items=8, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Aj1lpRJvGS-d3Ho1.OYtECp5I6Yu, payer_id=S64ML4G352ER8, charset=windows-1252, tax1=0.00, receiver_id=F27DKKEPRMGY2, tax2=0.00, tax3=0.00, tax4=0.00, tax5=0.00, tax6=0.00, mc_handling1=0.00, tax7=0.00, mc_handling2=0.00, tax8=0.00, mc_handling3=0.00, mc_handling4=0.00, mc_handling5=0.00, item_name1=เหล็กกล่องแบน, mc_handling6=0.00, tax=0.00, item_name2=เหล็กปลอกเสา เหล็กปลอกคาน, mc_handling7=0.00, item_name3=กระเบื้องลอนคู่ เอสซีจี, mc_handling8=0.00, item_name4=ถังบำบัดน้ำเสีย ประเภทถังเกรอะ, payment_type=instant, item_name5=อิฐบล็อก, item_name6=ไม้เชิงชาย เอสซีจี SCG สมาร์ทวูด, item_name7=ไม้ฝา เอสซีจี SCG สมาร์ทวูด, item_name8=ปูนซีเมนต์ถุงเอสซีจี ไฮบริด ถุง 50 กก.  สูตรไฮบร, mc_shipping1=0.00, address_street=1 Main St, mc_shipping2=0.00, mc_shipping3=0.00, txn_id=3GM665412G671750R, mc_shipping4=0.00, mc_shipping5=0.00, mc_shipping6=0.00, mc_shipping7=0.00, mc_shipping8=0.00, mc_gross_1=100.00, quantity1=1, mc_gross_2=253.00, quantity2=1, item_number1=8104879, protection_eligibility=Eligible, mc_gross_3=69.00, quantity3=1, item_number2=8102199, mc_gross_4=4857.00, quantity4=1, item_number3=8114749, mc_gross_5=38.00, quantity5=1, custom=Kamontat, item_number4=8130925, mc_gross_6=58.00, quantity6=1, item_number5=8122867, mc_gross_7=389.00, quantity7=1, item_number6=8124261, mc_gross_8=148.00, quantity8=1, business=apisit.junpim-facilitator@gmail.com, item_number7=8121363, item_number8=8115074, residence_country=US, last_name=buyer, address_state=CA, payer_email=apisit.junpim-buyer@gmail.com, address_city=San Jose, payment_status=Completed, payment_date=21:38:44 Nov 13, 2016 PST, transaction_subject=, receiver_email=apisit.junpim-facilitator@gmail.com, mc_fee=182.45, notify_version=3.8, address_country=United States, mc_gross=5912.00, test_ipn=1, address_name=test buyer, merchant_return_link=click here, auth=AAbW7dmztYb3edxxOwcfM5ngbCkMJh9RkEoa8G9UIctQ63jhF8tIkJfqrXL8tLcgIhVobf2YyWxhhyTQXRcu6mA, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/18/2016 1:32 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=21130.00, protection_eligibility=Eligible, address_status=confirmed, item_number1=8131983, payer_id=S64ML4G352ER8, tax=0.00, address_street=1 Main St, payment_date=22:32:42 Nov 17, 2016 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=test, mc_fee=623.77, address_country_code=US, address_name=test buyer, notify_version=3.8, custom=Kamontat, payer_status=verified, business=apisit.junpim-facilitator@gmail.com, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=apisit.junpim-buyer@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31A9QILeKT.aANn.JZOrnYscIGQPdd, mc_shipping1=0.00, tax1=0.00, txn_id=8RV755511N8635006, payment_type=instant, last_name=buyer, item_name1=สีน้ำอะครีลิค สําหรับภายใน โฟร์ซีซั่นส์, address_state=CA, receiver_email=apisit.junpim-facilitator@gmail.com, payment_fee=, quantity1=10, receiver_id=F27DKKEPRMGY2, txn_type=cart, mc_currency=THB, mc_gross_1=21130.00, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=, merchant_return_link=click here, auth=AS3VX-pHhKIV6n5XgKuVwhv2ZbIy3psJwK6U8zFd7PAVw1zNS7fu0cBBL61n1I17bZBINo2GSV1.d.6DBhpKt9w, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/18/2016 3:20 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=84.00, protection_eligibility=Eligible, address_status=confirmed, item_number1=8121833, payer_id=S64ML4G352ER8, item_number2=8115367, tax=0.00, address_street=1 Main St, payment_date=00:19:54 Nov 18, 2016 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=test, mc_fee=13.44, address_country_code=US, address_name=test buyer, notify_version=3.8, custom=Apisit, payer_status=verified, business=apisit.junpim-facilitator@gmail.com, address_country=United States, num_cart_items=2, mc_handling1=0.00, mc_handling2=0.00, address_city=San Jose, payer_email=apisit.junpim-buyer@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31A8UEFhpagNSlszmMfAaY87aAnIH2, mc_shipping1=0.00, mc_shipping2=0.00, tax1=0.00, tax2=0.00, txn_id=6NP02051RL949705M, payment_type=instant, last_name=buyer, item_name1=ท่อพีวีซีสีเหลือง, address_state=CA, receiver_email=apisit.junpim-facilitator@gmail.com, item_name2=ลวดผูกเหล็ก, payment_fee=, quantity1=1, receiver_id=F27DKKEPRMGY2, quantity2=1, txn_type=cart, mc_currency=THB, mc_gross_1=4.00, mc_gross_2=80.00, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=, auth=AQhXh6cgwCKKYEdaaW2rPBgwrEVP7Op2OZH-ZuvM7KwTnXrvvbm83bSKl.ulqinU7XDWd8bAuezg-Yx82aR8I.Q, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/18/2016 3:39 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=2962.00, protection_eligibility=Eligible, address_status=confirmed, item_number1=8120346, payer_id=S64ML4G352ER8, item_number2=8131983, tax=0.00, address_street=1 Main St, payment_date=00:39:46 Nov 18, 2016 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=test, mc_fee=96.90, address_country_code=US, address_name=test buyer, notify_version=3.8, custom=Apisit Junpim, payer_status=verified, business=apisit.junpim-facilitator@gmail.com, address_country=United States, num_cart_items=2, mc_handling1=0.00, mc_handling2=0.00, address_city=San Jose, payer_email=apisit.junpim-buyer@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AZy5v.Y7rDeV6K2lTUOU04iY-IsO, mc_shipping1=0.00, mc_shipping2=0.00, tax1=0.00, tax2=0.00, txn_id=69T52836FP911131K, payment_type=instant, last_name=buyer, item_name1=ไม้ตกแต่งผนังโมดิน่า  เอสซีจี SCG สมาร์ทวูด, address_state=CA, receiver_email=apisit.junpim-facilitator@gmail.com, item_name2=สีน้ำอะครีลิค สําหรับภายใน โฟร์ซีซั่นส์, payment_fee=, quantity1=1, receiver_id=F27DKKEPRMGY2, quantity2=1, txn_type=cart, mc_currency=THB, mc_gross_1=849.00, mc_gross_2=2113.00, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=, merchant_return_link=click here, auth=Anen4rA5UjbZT3SRsDbLjQedGq9d7-N2tJnDAuPVMGUueWXiVZJ.5-uz7yiiRd2wEjcDnfRgS0BvGaFMWxKumHw, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/22/2016 11:06 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=378.00, protection_eligibility=Eligible, address_status=confirmed, item_number1=8114665, payer_id=S64ML4G352ER8, item_number2=8111564, tax=0.00, item_number3=8120881, address_street=1 Main St, payment_date=20:06:35 Nov 21, 2016 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=test, mc_fee=21.96, address_country_code=US, address_name=test buyer, notify_version=3.8, custom=Apisit, payer_status=verified, business=apisit.junpim-facilitator@gmail.com, address_country=United States, num_cart_items=3, mc_handling1=0.00, mc_handling2=0.00, mc_handling3=0.00, address_city=San Jose, payer_email=apisit.junpim-buyer@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31ApDXKRvhwvWTB0A1hHLsSpBRiWm4, mc_shipping1=0.00, mc_shipping2=0.00, tax1=0.00, mc_shipping3=0.00, tax2=0.00, tax3=0.00, txn_id=63L01974U44921338, payment_type=instant, last_name=buyer, receiver_email=apisit.junpim-facilitator@gmail.com, item_name1=กระเบื้องเคิฟลอน เอสซีจี, address_state=CA, payment_fee=, item_name2=กระเบื้องเอ็กเซลล่า คลาสสิค ลายไทย เอสซีจี, item_name3=อิฐมอญ, quantity1=2, receiver_id=F27DKKEPRMGY2, quantity2=2, txn_type=cart, quantity3=2, mc_currency=THB, mc_gross_1=136.00, mc_gross_2=138.00, residence_country=US, mc_gross_3=104.00, test_ipn=1, transaction_subject=, payment_gross=, auth=Ah37AHk7Ktyg9a.sXWJDefxqc2SydEb50UtDDLz.Dv-NWZR3ypKj0sYh9Ee1AT8TmBsJnKcw1QU6nCsBddvFzUQ, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+

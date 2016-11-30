@@ -1,0 +1,5 @@
+/*SETTING*/
+#save{background-color: #ddd;color: #000;border: 1px solid #dddddd;font-size: 14px;padding: 4px 0px;width: 50%;}
+#save:hover{color: #fff;background-color: #286090;border-color: #204d74;}
+#cancel{background-color: #ddd;color: #000;border: 1px solid #dddddd;font-size: 14px;padding: 4px 0px;width: 50%;}
+#cancel:hover{color: #fff;background-color: #286090;border-color: #204d74;}

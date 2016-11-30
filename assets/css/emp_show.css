@@ -1,0 +1,27 @@
+.emp_show{padding: 0px 5px;}
+    .emp_show table{text-align: center;width: 100%;background-color: #fff;border: none;}
+tbody{color: #777;}
+.emp_show table tr th{
+   text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+    font-size: 16px;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.07);
+        border-right: none;
+        border-left: none;
+        color: #898989;
+}
+
+.emp_show table tr td{
+    font: 14px Helvetica;
+    border: 1px solid;
+        border-color: transparent;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+
+
+.emp_edit{border: 1px solid #ddd;border-radius: 3px;padding: 5px 5px;}
+
