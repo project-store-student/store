@@ -926,11 +926,9 @@ class Admin extends CI_Controller {
 
     public function one_product() {
         $this->check();
-
-        $id = $this->input->post("id");
+        $id = $this->input->get("id");
         $data["row"] = $this->materials_model->select_store_product($id);
-        $view = $this->load->view("ajax_one_product", $data, true);
-        echo $view;
+        $this->load->view("one_product", $data);
     }
 
     public function delete_ssm_whid() {

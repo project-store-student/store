@@ -100,8 +100,9 @@ class Materials_model extends CI_Model {
     }
 
     public function select_store_product($id) {
-        $this->db->select('store_materials.*,materials_type.ty_name,materials_type_category.ct_name');
-        $this->db->where('sm_autoid', $id);
+        $this->db->select('store_materials.*,materials_type.ty_name,materials_type_category.ct_name,ss_autoid,ss_unit,ss_price');
+        $this->db->where('store_materials.sm_autoid', $id);
+        $this->db->join('store_sale', 'store_materials.sm_autoid = store_sale.sm_autoid','left');
         $this->db->join('materials_type_category', 'store_materials.sm_categoryid = materials_type_category.ct_auto');
         $this->db->join('materials_type', 'store_materials.sm_typeid= materials_type.ty_id');
        return $this->db->get('store_materials')->result();

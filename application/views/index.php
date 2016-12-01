@@ -11,7 +11,9 @@
 <link rel="stylesheet" href="<?php echo base_url("assets/fontello/css/fontello.css"); ?>"> 
 <!-- END HEADER -->
   <!-- CONTENT -->
-<script type="text/javascript" src="<?php echo base_url("assets/js/jquery.validate.min.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/js/jquery.validate.min.js"); ?>"></script> 
+<link rel="stylesheet" href="<?php echo base_url("assets/fontello/css/animation.css"); ?>"> 
+
 <!-- END CONTENT -->
         <title>Store</title>
     </head>
