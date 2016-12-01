@@ -1205,6 +1205,9 @@ class Admin extends CI_Controller {
         $config['total_rows'] = $this->materials_model->count_sm();
         $config['per_page'] = $this->limit;
         $config['uri_segment'] = 6;
+          $config['num_links'] = 4;
+         $config['first_link']       = "First";
+        $config['last_link']        = "Last";
         $this->pagination->initialize($config);
         $data['pagination'] = $this->pagination->create_links();
 
@@ -1231,6 +1234,9 @@ class Admin extends CI_Controller {
         $config['total_rows'] = $this->employee_model->count_all();
         $config['per_page'] = $this->limit;
         $config['uri_segment'] = 5;
+          $config['num_links'] = 4;
+         $config['first_link']       = "First";
+        $config['last_link']        = "Last";
         $this->pagination->initialize($config);
         $data['pagination'] = $this->pagination->create_links();
 
@@ -1410,8 +1416,11 @@ class Admin extends CI_Controller {
         $sm_sale = 0;
         $config['base_url'] = base_url() . "admin/product_sale" . '/' . $order_column . '/' . $order_type . '/' . $sort . '/';
         $config['total_rows'] = $this->materials_model->count_sm_smsale0($sm_sale);
-        $config['per_page'] = $this->limit;
+        $config['per_page'] =$this->limit;
         $config['uri_segment'] = 6;
+         $config['num_links'] = 4;
+         $config['first_link']       = "First";
+        $config['last_link']        = "Last";
         $this->pagination->initialize($config);
         $data['pagination'] = $this->pagination->create_links();
 

@@ -451,6 +451,8 @@ strong{
 }
 a[rel="next"]{display: none;}
 a[rel="prev"]{display: none;}
+/*a[rel="start"]{display: none;}*/
+a[rel="last"]{display: none;}
 
 .frm-sort{float: right;font-size: 12px;}
 .sort-item{list-style: none;display: none;}
