@@ -695,7 +695,8 @@ foreach ($test as $key) {
         var url = window.location.href;
 
         var res1 = url.replace("http://store.com/product/", "");
-        if (res1[0] == null || res1[0] == "#") {
+        var res2 = url.replace("http://store.com/", "");
+        if (res1[0] == null || res1[0] == "#" || res2[0] == null) {
             $('#step-1').show();
         } else {
             $('#step-' + res1[0]).show();

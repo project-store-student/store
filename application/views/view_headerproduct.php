@@ -12,7 +12,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span id="span-icon" class="icon-align-justify "></span>
                 </button>
-                <a class="navbar-brand" style="padding: 2px 0px" id="index" href="<?php echo base_url("product/"); ?>"><img width="49" src="<?php echo base_url('assets/images/logo.png') ?>"></a>
+                <a class="navbar-brand" style="padding: 2px 0px" id="index" href="<?php echo base_url(); ?>"><img width="49" src="<?php echo base_url('assets/images/logo.png') ?>"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -287,7 +287,7 @@
                     }
                 }
             });
-            $('#index,#index-product').on("click", function () {
+            $('#index-product').on("click", function () {
                 var url = window.location.href;
                 var res1 = url.replace("http://store.com/product/", "");
                 var res2 = res1.split("/");
@@ -306,8 +306,7 @@
                     $("#index").attr("href", "#page-top");
                     $("#index-product").attr("href", "#product");
                 } else {
-                    $("#index").attr("href", "<?php echo product_url(); ?>");
-                    $("#index-product").attr("href", "<?php echo product_url(); ?>");
+                    $("#index-product").attr("href", "<?php echo base_url(); ?>");
                 }
             });
             $("#list-cart").on("click", function () {
