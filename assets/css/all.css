@@ -138,7 +138,7 @@ width: 100%;
     width: 100%;
 }
 .head-menu-menu-user .head-menu-menu-user-dropdown{display: block !important;position: relative;top: 0;background-color: #000;border: 
-none;}
+none;left: 0;}
 .head-menu-menu-user .head-menu-menu-user-dropdown::after{border:none;}
 .head-menu-menu-user .user-dropdown-li-a{color: #fff;font-size: 12px}
 .head-menu-menu-user .user-dropdown-li-a:hover{color: #666;background-color: #000;}

@@ -1102,16 +1102,20 @@ class Admin extends CI_Controller {
 
     public function report_store_sale($order_column = 'sm_autoid', $order_type = 'asc', $sort = 2, $offset = 0) {
         $this->check();
-        if ($sort == 1) {
-            $data['sort'] = 'Highest ID';
-        } elseif ($sort == 2) {
-            $data['sort'] = 'Lowest ID';
-        } elseif ($sort == 3) {
-            $data['sort'] = 'Highest Price';
-        } else {
-            $data['sort'] = 'Lowest Price';
-        }
-
+    switch ($sort) {
+    case 1:
+        $data['sort'] = 'Highest ID';
+        break;
+    case 2:
+        $data['sort'] = 'Lowest ID';
+        break;
+    case 3:
+       $data['sort'] = 'Highest Price';
+        break;
+     case 4:
+          $data['sort'] = 'Lowest Price';
+        break;
+}
         $config['base_url'] = base_url() . "admin/report_store_sale" . '/' . $order_column . '/' . $order_type . '/' . $sort . '/';
         $config['total_rows'] = $this->materials_model->count_store_sale();
         $config['per_page'] = $this->limit;
@@ -1176,19 +1180,26 @@ class Admin extends CI_Controller {
 
     function store($order_column = 'sm_autoid', $order_type = 'asc', $sort = 2, $offset = 0) {
         $this->check();
-        if ($sort == 1) {
-            $data['sort'] = 'Highest ID';
-        } elseif ($sort == 2) {
-            $data['sort'] = 'Lowest ID';
-        } elseif ($sort == 3) {
-            $data['sort'] = 'Highest Amount';
-        } elseif ($sort == 4) {
-            $data['sort'] = 'Lowest Amount';
-        } elseif ($sort == 5) {
-            $data['sort'] = 'A-Z';
-        } else {
-            $data['sort'] = 'Z-A';
-        }
+        switch ($sort) {
+    case 1:
+        $data['sort'] = 'Highest ID';
+        break;
+    case 2:
+        $data['sort'] = 'Lowest ID';
+        break;
+    case 3:
+        $data['sort'] = 'Highest Amount';
+        break;
+     case 4:
+         $data['sort'] = 'Lowest Amount';
+        break;
+         case 5:
+         $data['sort'] = 'A-Z';
+        break;
+          case 6:
+         $data['sort'] = 'Z-A';
+        break;
+}
 
         $config['base_url'] = base_url() . "admin/store" . '/' . $order_column . '/' . $order_type . '/' . $sort . '/';
         $config['total_rows'] = $this->materials_model->count_sm();
@@ -1376,19 +1387,26 @@ class Admin extends CI_Controller {
 
     public function product_sale($order_column = 'sm_autoid', $order_type = 'asc', $sort = 2, $offset = 0) {
         $this->check();
-        if ($sort == 1) {
-            $data['sort'] = 'Highest ID';
-        } elseif ($sort == 2) {
-            $data['sort'] = 'Lowest ID';
-        } elseif ($sort == 3) {
-            $data['sort'] = 'Highest Amount';
-        } elseif ($sort == 4) {
-            $data['sort'] = 'Lowest Amount';
-        } elseif ($sort == 5) {
-            $data['sort'] = 'A-Z';
-        } else {
-            $data['sort'] = 'Z-A';
-        }
+         switch ($sort) {
+    case 1:
+        $data['sort'] = 'Highest ID';
+        break;
+    case 2:
+        $data['sort'] = 'Lowest ID';
+        break;
+    case 3:
+        $data['sort'] = 'Highest Amount';
+        break;
+     case 4:
+         $data['sort'] = 'Lowest Amount';
+        break;
+         case 5:
+         $data['sort'] = 'A-Z';
+        break;
+          case 6:
+         $data['sort'] = 'Z-A';
+        break;
+}
         $sm_sale = 0;
         $config['base_url'] = base_url() . "admin/product_sale" . '/' . $order_column . '/' . $order_type . '/' . $sort . '/';
         $config['total_rows'] = $this->materials_model->count_sm_smsale0($sm_sale);
